@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+    <form action="">
+        <div class="row">
+            <div class="col">
+                User ID:
+            </div>
+            <div class="col">
+                <input type="text" id="UserID">
+                <span id="statusOfUserID"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Password:
+            </div>
+            <div class="col">
+                <input type="text" id="Password">
+                <span id="statusOfPassword"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Name:
+            </div>
+            <div class="col">
+                <input type="text" class="Name">
+                <span class="statusofName"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Address:
+            </div>
+            <div class="col">
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Country
+            </div>
+            <div class="col">
+                <select id="country">
+                    <option value="None"></option>
+                    <option value="E">Anh</option>
+                    <option value="V">Việt Nam</option>
+                    <option value="C">Trung Quốc</option>
+                </select>
+                <span id="statusOfCountry"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Zip Code:
+            </div>
+            <div class="col">
+                <input type="text" id="Code">
+                <span id="statusofCode"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Email:
+            </div>
+            <div class="col">
+                <input type="text" id="Email">
+                <span id="statusofEmail"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Sex:
+            </div>
+            <div id="sex">
+                <div class="col">
+                    <input type="radio" id="Male" name="Sex" value="Male">
+                    <label for="Male">Male</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="Female" name="Sex" value="Female">
+                    <label for="Female">Female</label>
+                </div>
+                <span id="statusOfSex"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                Language:
+            </div>
+            <div class="language">
+                <div class="col">
+                    <input type="radio" id="English" name="fav_language" value="English">
+                    <label for="English">English</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="Non-English" name="fav_language" value="Non">
+                    <label for="Non English">Non English</label>
+                </div>
+            </div>
+            <span id="statusOfLanguage"></span>
+        </div>
+        <div class="row">
+            <div class="col">
+                About:
+            </div>
+            <div class="col">
+                <input type="text" class="About_input">
+            </div>
+        </div>
+        <div class="col">
+            <button type="button" onclick="handleSubmit()" class="Submit_button">
+                Submit
+            </button>
+        </div>
+
+    </form>
+</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
